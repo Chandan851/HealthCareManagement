@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+ body{
+  background-image: url('hospital2.png');
+   background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+#loginbox {
+width: 30%;
+border-radius: 40px;
+
+padding-bottom: 5%;
+background-color: rgb(142, 184, 165) ;
+}
+  </style>
+</head>
+<body>
+<div align="center">
+ <h2>Enter Detail to add</h2>
+    <div class="login-modal-div" id="loginbox">
+ 
+ <table style="with: 100%">
+   <form action="AddSurgeon" method="post">
+     <td>Enter Surgeon Name </td>
+     <td><input type="text" name="name" required/><br><br></td>
+    <br><br>
+    <tr>
+     <td>Designation </td>
+     <td><input type="text" name="designation" required /><br><br></td>
+    </tr><br><br>
+   </table>
+    <input type="submit" value="Submit" /></form>
+   
+   <a href="Surgeon.html"><button  class ="button" >Back</button>
+  
+</body>
+</html>

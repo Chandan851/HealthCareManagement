@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+body{
+  background-image: url('hospital2.png');
+   background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+#loginbox {
+width: 30%;
+border-radius: 40px;
+padding-top: 3%;
+padding-bottom: 5%;
+background-color: rgb(142, 184, 165) ;
+}
+
+  </style>
+
+</head>
+<body>
+<div align="center">
+<p><b>Please enter Patient ID to delete.</b></p>
+   <div class="login-modal-div" id="loginbox">
+
+   
+<form action="RemovePatient" > 
+Enter patient Id:<input type="number" name="id" placeholder="Enter patient Id" required/><br><br>
+    <input type="submit" value="Submit" /></form><br>
+    
+   
+   <a href="Patient.html"><button class ="button" >Back</button></a>
+    </div>
+</body>
+</html>

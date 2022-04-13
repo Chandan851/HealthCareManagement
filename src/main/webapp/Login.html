@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+<style>
+body{
+  background-image: url('Loginhospital.jpg');
+   background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+login-modal-div {
+    font-family: 'RobotoDraft', 'Roboto', 'Helvetica Neue, Helvetica, Arial', sans-serif;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 70px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+#loginbox {
+width: 30%;
+border-radius: 40px;
+padding-top: 3%;
+padding-bottom: 5%;
+background-color: rgb(142, 184, 165) ;
+}
+</style>
+</head>
+<body>
+ <div align="center" >
+ <h3>ADMIN LOGIN</h3>
+<p>Please enter your credentials to login.</p>
+  <marquee ><h1>E-HEALTH CARE MANAGEMENT</h1></marquee>
+  <div class="login-modal-div" id="loginbox">
+  <form action="LoginServlet" >
+   <table style="with: 100%">
+    <tr>
+     <td><b>UserName</b></td>
+     <td><input type="email" name="username" placeholder="Enter Username or email" required/><br><br></td>
+    </tr><br>
+    <tr>
+     <td><b>Password</b></td>
+     <td><input type="password" name="password" placeholder="Enter Password" required /><br><br></td>
+    </tr>
+
+   </table>
+   <input type="submit" value="Submit" />
+ <p class="message">Not registered? <a href="SignUp.jsp">Create an account</a></p>
+  </form>
+ </div>
+
+</body>
+</html>
